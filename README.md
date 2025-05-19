@@ -73,6 +73,11 @@ kubectl create ns todo-app
 kubectl apply -f kubernetes/
 ```
 
+### Listar los servicios 
+
+```bash
+kubectl get svc -n todo-app
+```
 ---
 
 # Capturas de Pantalla
