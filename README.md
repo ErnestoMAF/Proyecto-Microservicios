@@ -12,8 +12,7 @@ Esta es una aplicación de tareas basada en una arquitectura de microservicios. 
 
 - **API Service**
   - Lenguaje/Framework: Python, FastAPI
-  - Descripción: Servicio que expone APIs RESTful con las que se comunica el `frontend`. No contiene mucha lógica de negocio; en su lugar, se comunica con los servicios `auth-service` y `todo-service` mediante `gRPC`. Las definiciones de protobuf están [aquí](./protobuf/).
-
+  - Descripción: Servicio que expone APIs RESTful con las que se comunica el `frontend`. Se comunica con los servicios `auth-service` y `todo-service` mediante `gRPC`.
 - **Auth Service**
   - Lenguaje/Framework: Go
   - Descripción: Encargado de la autenticación, registro, etc. Almacena los datos en una base de datos `PostgreSQL`.
